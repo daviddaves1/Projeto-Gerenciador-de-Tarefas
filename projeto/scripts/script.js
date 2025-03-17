@@ -18,6 +18,13 @@ function addTaskList() {
         taskTitleElement.classList.add("task-title");
         taskTitleElement.textContent = taskTitle;
 
+        const deleteIcon = document.createElement("span");
+        deleteIcon.classList.add("material-symbols-outlined", "delete-forever");
+        deleteIcon.textContent = "delete_forever";
+        deleteIcon.addEventListener("click", ()=> {
+            removeTask(newTask);
+        });
+
         // Limpa o texto
         document.querySelector("#task-title").value = "";
     }
