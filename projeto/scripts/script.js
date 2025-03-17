@@ -48,3 +48,21 @@ function removeTask(task) {
     task.remove();
 }
 
+// Função que marca a tarefa como concluída  
+function completeTask(task) {
+    task.classList.toggle("completed-task");
+
+    const taskTitle = task.querySelector(".task-title");
+    taskTitle.classList.toggle("completed-task-title");
+
+    if (task.classList.contains("completed-task")) {
+        task.style.backgroundColor = "#34073d";
+        task.style.color = "white";
+        task.style.border = "1px solid #ffffff7b";
+        taskTitle.style.textDecoration = "line-through";
+    } else {
+        task.style.backgroundColor = "white";
+        task.style.color = "#34073d";
+        taskTitle.style.textDecoration = "none"; 
+    }
+}
