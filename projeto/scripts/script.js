@@ -25,6 +25,13 @@ function addTaskList() {
             removeTask(newTask);
         });
 
+        const checkIcon = document.createElement("span");
+        checkIcon.classList.add("material-symbols-outlined", "check-circle");
+        checkIcon.textContent = "check_circle";
+        checkIcon.addEventListener("click", ()=>{
+            completeTask(newTask);
+        });
+
         // Limpa o texto
         document.querySelector("#task-title").value = "";
     }
