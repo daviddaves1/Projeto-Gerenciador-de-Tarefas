@@ -106,3 +106,31 @@ h2 {
   align-items: center;
   justify-content: space-between;
 }
+
+.task-title {
+  flex: 1;
+}
+
+.material-symbols-outlined.delete-forever,
+.material-symbols-outlined.check-circle {
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.material-symbols-outlined.delete-forever:hover {
+  color: red;
+}
+
+.material-symbols-outlined.check-circle:hover {
+  color: rgb(0, 182, 0);
+}
+
+.delete-forever,
+.check-circle {
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+}
