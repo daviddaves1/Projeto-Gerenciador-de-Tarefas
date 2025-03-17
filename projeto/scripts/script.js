@@ -32,8 +32,19 @@ function addTaskList() {
             completeTask(newTask);
         });
 
+        newTask.appendChild(taskTitleElement);
+        newTask.appendChild(deleteIcon);
+        newTask.appendChild(checkIcon);
+
+        const list = document.querySelector("#task-list");
+        list.appendChild(newTask);
+
         // Limpa o texto
         document.querySelector("#task-title").value = "";
     }
+}
+
+function removeTask(task) {
+    task.remove();
 }
 
