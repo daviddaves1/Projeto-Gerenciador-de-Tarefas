@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' 150,
+    'opsz' 40;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #370095, #34003e);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  text-shadow: 0px 0px 5px black;
+  font-size: 2.5em;
+}
+
+hr {
+  margin-top: 15px;
+}
+
+p {
+  font-size: 1.5em;
+  margin-top: 2em;
+  font-style: italic;
+  text-shadow: 0px 0px 10px black;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+form > #task-title {
+  padding: 10px;
+  width: 60%;
+  font-size: 1em;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  outline: none;
+}
+
+form > #add-task {
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-left: none;
+  cursor: pointer;
+  background-color: white;
+  color: #34073d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form > #add-task:hover {
+  color: white;
+  background-color: #6e2ae5;
+  transition-duration: 0.3s;
+}
+
+#add-task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 50px;
+}
+
+#task-container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  margin: 1em 0 1.7em 0;
+}
+
